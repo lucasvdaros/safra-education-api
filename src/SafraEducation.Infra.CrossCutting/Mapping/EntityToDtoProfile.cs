@@ -1,4 +1,6 @@
 using AutoMapper;
+using SafraEducacional.Domain.DTO.User;
+using SafraEducacional.Domain.Entity;
 
 namespace SafraEducacional.Infra.CrossCutting.Mappings
 {
@@ -6,7 +8,8 @@ namespace SafraEducacional.Infra.CrossCutting.Mappings
     {
         public EntityToDtoProfile()
         {
-           
+            // User
+            CreateMap<User, UserDTO>();
         }
     }
 }

@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using SafraEducacional.Infra.Data.Mapping;
 
 namespace SafraEducation.Infra.Data
 {
@@ -7,7 +8,9 @@ namespace SafraEducation.Infra.Data
         public Context(DbContextOptions<Context> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
+        {   
+            modelBuilder.ApplyConfiguration(new UserMap());
+
             base.OnModelCreating(modelBuilder);
         }
     }
