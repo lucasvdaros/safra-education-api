@@ -1,21 +1,18 @@
 # What is Safra Education?
 It's an open source project, written in .NET Core, currently in version 3.1.
-
 The project's goals is to complete the Safra Bank Hackaton lol
-
 ## Business proposal:
 The principle idea is to provide some servers that helps the users to learn about investments in a pratical scenario.
 
 ## How to use:
-1. Clone this project to into your machine
-2. Use the default connection string or:
-    2.1. Install and configure [MySql](https://dev.mysql.com/downloads/mysql/).
-    2.2. Inform the connection string on SafraEducation.Application/appsettings.json.
-    * Put the server name on [SERVER] tag
-    * Put the port number on [PORT] tag
-    * Put the user name database on [USER] tag
-    * Put the password database on [PASSWORD] tag
-4. Finally, build and run the application
+### Requisits
+* Docker installed (click [here](https://docs.docker.com/get-docker/) to see how to install)
+* Docker compose (click [here](https://docs.docker.com/compose/install/) to see how to install)
+### How to run
+1. Clone this project into your machine
+2. Run `docker-compose up -d`
+3. Go to `http://localhost:5000` to access the application
+4. Run `docker-compose down --rmi all` to stop the application and erase the generated images
 
 ## Technologies implemented:
 * ASP.NET Core 3.1 (with .NET Core 3.1)

@@ -4,18 +4,8 @@
 /src/SafraEducation/.vs/
 /src/SafraEducation/.vscode/
 
-/src/SafraEducation.Application/obj
-/src/SafraEducation.Application/bin
-/src/SafraEducation.Domain/obj
-/src/SafraEducation.Domain/bin
-/src/SafraEducation.Service/obj
-/src/SafraEducation.Service/bin
-/src/SafraEducation.Infra.CrossCutting/obj
-/src/SafraEducation.Infra.CrossCutting/bin
-/src/SafraEducation.Infra.Data/obj
-/src/SafraEducation.Infra.Data/bin
+/src/**/obj
+/src/**/bin
 
-test/SafraEducation.Tests.Integration/obj
-test/SafraEducation.Tests.Integration/bin
-test/SafraEducation.Tests.Unit/bin
-test/SafraEducation.Tests.Unit/obj
+/test/**/obj/*
+/test/**/bin
